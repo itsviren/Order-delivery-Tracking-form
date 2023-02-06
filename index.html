@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="icon" href="img/favicon.ico">
+<title>order/delivery tracking form</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<main>
+<div class="heading">
+<h1 class="main-heading heading">Order/delivery Tracking</h1>
+<p class="sub-heading heading">Trace your order.</p>
+</div>
+
+<div class="main-container container">
+
+<form action="/" method="get" name="form1" id="form1">
+
+<div class="first-sub-container container">
+
+<h3>Personal Information</h3>
+<hr>
+
+<div class="label-input-container name-container">
+<label for="name">Name<span>*</span></label>
+<input type="text" required id="name">
+</div>
+<div class="label-input-container email-container">
+<label for="email">Email<span>*</span></label>
+<input type="email" required id="email">
+</div>
+<div class="label-input-container contact-number-container">
+<label for="contact-number">Contact number<span>*</span></label>
+<input type="tel" required id="contact-number" pattern="[0-9]{10}">
+</div>
+<div class="content">
+<div class="empty-content" style="width:1rem;height:1rem;"></div>
+<p class="p-in-container">As per your order</p>
+</div>
+</div>
+
+<div class="second-sub-container container">
+<h3>Order Information</h3>
+<hr>
+
+
+
+<div class="label-input-container order-id-container">
+<label for="order-id">Order ID<span>*</span></label>
+<input type="text" required id="order-id">
+</div>
+
+<div class="label-input-container delivery-destination-container">
+<label for="delivery-destination">delivery destination<span>*</span></label>
+
+<div class="try">
+<input type="text" required id="delivery-destination">
+<p>Street Address</p>
+<input type="text" required id="delivery-destination">
+<p>Address Line 2</p>
+
+
+<input type="text" required id="delivery-destination">
+<p>City</p>
+
+<input type="text" required id="delivery-destination">
+<p>State/Region/Province</p>
+
+<input type="text" required id="delivery-destination">
+<p>Postal/Zip Code</p>
+
+
+<select id="delivery-destination" name="country">
+<option value="india">India</option>
+<option value="usa">USA</option>
+<option value="canada" selected>Canada</option>
+<select>
+<p>Country</p>
+</div>
+</div>
+
+<div class="label-input-container when-did-you-place-your-order-container">
+<label for="when-did-you-place-your-order">when did you place your order?<span>*</span></label>
+<input type="text" required id="when-did-you-place-your-order">
+</div>
+
+
+
+</div>
+
+
+
+
+
+<div class="submitAndReset">
+<input type="submit" form="form1">
+<input type="reset" form="form1">
+</div>
+
+
+</div>
+
+</div>
+
+
+</main>
+</body>
